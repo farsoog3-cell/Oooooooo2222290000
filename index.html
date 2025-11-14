@@ -3,68 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>mlfa2025شركه</title>
+<title>Al.go2</title>
 <style>
 body, html {
   margin:0; padding:0; height:100%; width:100%;
   font-family:'Segoe UI',sans-serif;
   display:flex; flex-direction:column;
-  background:#f9f6ff; /* خلفية بنفسجية فاتحة */
+  background:#ffffff;
 }
 header {
-  background: linear-gradient(90deg,#7e57c2,#512da8); /* تدرج بنفسجي ناعم */
+  background:#000000;
   color:#fff; text-align:center;
   padding:15px 0; font-size:1.4em; font-weight:bold;
-  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  box-shadow:0 2px 6px rgba(0,0,0,0.2);
 }
 #main { flex:1 1 auto; display:flex; justify-content:center; align-items:center; padding:20px;}
 canvas {
   display:block;
   background:#ffffff;
   border-radius:20px;
-  box-shadow:0 4px 10px rgba(126,87,194,0.2);
-  border:2px solid #d1c4e9; /* بنفسجي فاتح */
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  border:2px solid #000000;
 }
 #board { width:80vmin; height:80vmin;}
 .controls {
   flex:0 0 auto; padding:10px;
   background:#ffffff;
   display:flex; justify-content:center; align-items:center;
-  border-top:2px solid #e1bee7;
+  border-top:2px solid #000000;
   flex-wrap:wrap;
 }
 button {
   padding:8px 12px; margin:5px;
   border-radius:12px; border:none;
   cursor:pointer; transition:0.3s;
-  background:#7e57c2; color:#fff; font-weight:600;
-  box-shadow:0 2px 4px rgba(126,87,194,0.3);
+  background:#000000; color:#fff; font-weight:600;
+  box-shadow:0 2px 4px rgba(0,0,0,0.3);
 }
 button:hover {
-  background:#512da8;
-  box-shadow:0 3px 6px rgba(81,45,168,0.4);
+  background:#333333;
+  box-shadow:0 3px 6px rgba(0,0,0,0.4);
 }
 .upload-btn-wrapper {
   position: relative; overflow: hidden; display: inline-block;
 }
 .upload-btn {
-  background:#7e57c2; color:white; font-weight:600;
+  background:#000000; color:white; font-weight:600;
   padding:8px 20px; border-radius:12px; cursor:pointer;
-  box-shadow:0 2px 4px rgba(126,87,194,0.3);
+  box-shadow:0 2px 4px rgba(0,0,0,0.3);
 }
-.upload-btn:hover { background:#512da8; }
+.upload-btn:hover { background:#333333; }
 .upload-btn-wrapper input[type=file] {
   font-size:100px; position:absolute; left:0; top:0;
   opacity:0; cursor:pointer;
 }
 .warn {
-  color:#6a1b9a; font-size:0.85em; margin-left:15px;
-  background:#ede7f6; padding:5px 10px; border-radius:10px;
+  color:#000; font-size:0.85em; margin-left:15px;
+  background:#e6e6e6; padding:5px 10px; border-radius:10px;
 }
 </style>
 </head>
 <body>
-<header>مخطط تطريز - 2D منضبط ومحسن</header>
+<header>Al.go2 - مخطط تطريز أبيض/أسود</header>
 
 <div id="main"><canvas id="board"></canvas></div>
 
@@ -75,7 +75,7 @@ button:hover {
     <button class="upload-btn">📂 اختر صورة</button>
     <input type="file" id="upload" accept="image/*">
   </div>
-  <div class="warn">كل الغرز باللون الأسود ودقة الحواف محفوظة.</div>
+  <div class="warn">النظام يعمل بدقة عالية بالأبيض والأسود فقط.</div>
 </div>
 
 <script>
